@@ -1,9 +1,10 @@
 package sincronizacion;
 
-public class CompartirInfi {
+
+public class Main {
 
 	public static void main(String[] args) {
-		Contador cont = new Contador(100);
+		Contador cont = new Contador();
 		HiloA a = new HiloA("hilo A", cont);
 		HiloB b = new HiloB("hilo B", cont);
 		a.start();

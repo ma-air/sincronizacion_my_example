@@ -1,14 +1,14 @@
 package sincronizacion;
 
 public class Contador {
-	private int c = 0;
+	private int c;
 
-	Contador(int c) {
-		this.c = c;
+	Contador() {
+		this.c = 0;
 	}
 
 	public void incrementa() {
-		c++;
+		 c++;
 	}
 
 	public void decrementa() {
@@ -18,4 +18,16 @@ public class Contador {
 	public int getValor() {
 		return c;
 	}
+/*	public synchronized void incrementa() {
+		 c++;
+	}
+
+	public synchronized void decrementa() {
+		c--;
+	}
+
+	public synchronized int getValor() {
+		return c;
+	}*/
+
 }

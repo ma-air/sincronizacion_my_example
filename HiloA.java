@@ -8,13 +8,19 @@ public class HiloA extends Thread {
 		contador = c;
 	}
 
+	// LANZAR EL HILO
 	public void run() {
 		synchronized (contador) {
 
-			for (int i = 0; i < 20; i++) {
+			for (int i = 0; i < 100; i++) {
 				contador.incrementa();
 			}
 			System.out.println(getName() + " contador vale " + contador.getValor());
 		}
 	}
+
+	/*
+	 * public void run() { for (int i = 0; i < 100; i++) { contador.incrementa(); }
+	 * System.out.println(getName() + " contador vale " + contador.getValor()); }
+	 */
 }
